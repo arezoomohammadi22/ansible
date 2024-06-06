@@ -7,11 +7,11 @@
       - username: "user1"
         groupname: "sudo"
         password: "{{ 'password1' | password_hash('sha512') }}"
-        ssh_public_key_file: "/root/.ssh/id_rsa.pub"
+        ssh_public_key_file: "/root/ansible_project/user1_public_key.pub"
       - username: "user2"
         groupname: "sudo"
         password: "{{ 'password2' | password_hash('sha512') }}"
-        ssh_public_key_file: "/root/.ssh/id_rsa.pub"
+        ssh_public_key_file: "/root/ansible_project/user2_public_key.pub"
       # Add more users as needed
 
   tasks:
